@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Truculenta", sans-serif;
+}
+
+/* Body Styles */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #779BE7;
+}
+
+#btn{
+    font-size: 1.5rem;
+    padding: 3px 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+    box-shadow: 0 0 4px black;
+}
+
+.popup{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 20px 30px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    position: absolute;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.show-popup{
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup i{
+    margin: -50px;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: rgb(46, 212, 46);
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.popup .btn{
+    padding: 3px 15px;
+    font-size: .8rem;
+    border-radius: 5px;
+    border: 1px solid rgb(82, 81, 81);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
